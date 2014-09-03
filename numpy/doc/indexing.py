@@ -61,9 +61,9 @@ element being returned. That is: ::
     >>> x[0][2]
     2
 
-So note that ``x[0,2] = x[0][2]`` though the second case is more
-inefficient a new temporary array is created after the first index
-that is subsequently indexed by 2.
+So note that ``x[0,2] = x[0][2]``. The second case is more
+inefficient because a new temporary array is created by the first
+indexing. The temporary array is subsequently indexed by 2.
 
 Note to those used to IDL or Fortran memory order as it relates to
 indexing.  Numpy uses C-order indexing. That means that the last
